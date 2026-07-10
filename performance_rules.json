@@ -1,0 +1,16 @@
+{
+  "performance_governance": {
+    "version": "3.1.0",
+    "enforce_query_limits": true,
+    "max_allowed_scans_without_index": 0,
+    "query_gatekeeper_thresholds": {
+      "soft_alert_latency_ms": 10,
+      "hard_reject_latency_ms": 100,
+      "max_joined_tables_limit": 3
+    },
+    "automation_policies": {
+      "auto_kill_long_running_queries": true,
+      "max_transaction_idle_time_sec": 5
+    }
+  }
+}
